@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const div = document.createElement('div');
     div.className = 'particle';
     const rect = element.getBoundingClientRect();
-    const size = Math.random() * 0.004 * rect.width + 5;
+    const size = Math.random() * 0.04 * rect.width + 5;
     const x = rect.left + rect.width / 2;
     const y = rect.top + rect.height / 2;
-    const distance = rect.width * 0.06; 
+    const distance = rect.width * 0.8; 
     const radians = angle * (Math.PI / 180);
     const startX = x + Math.cos(radians) * distance - size / 2;
-    const startY = (y + Math.sin(radians) * distance - size / 2) + 25;
+    const startY = (y + Math.sin(radians) * distance - size / 2);
     div.style.width = `${size}px`;
     div.style.height = `${size}px`;
     div.style.background = 'white';
@@ -43,7 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
       const y = startY + Math.sin(startRadians) * progress * speed * 200; 
       particle.style.left = `${x}px`;
       particle.style.top = `${y}px`;
-      particle.style.opacity = 1 - progress;
+      if (progress <= 0.5) {
+        particle.style.opacity = progress;
+      } else {
+        particle.style.opacity = 1 - progress;
+      }
     }
 
     frame();
