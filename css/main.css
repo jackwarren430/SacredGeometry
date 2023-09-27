@@ -9,8 +9,8 @@ html {
 body {
     overflow: hidden;
     background-color:  var(--velvet);
-    background-image: url('../img/fruit-of-life.png');
-    background-position: center center;
+    background-image: url('../img/fruit-of-life2.png');
+    background-position: center -470px;
     background-size: 200vh;
     background-repeat: no-repeat;
 }
@@ -51,7 +51,9 @@ h1 {
 #explore-button {
     margin: 0;
     text-align: center;
-    font-size: 4vh;
+    font-size: 4.7vh;
+    font-weight: bold;
+    font-style: italic;
     color: inherit;
     text-decoration: none;
     transition: transform 0.3s ease-in-out;

@@ -1,0 +1,46 @@
+html {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    color: var(--beige);
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    overflow: hidden;
+    background-color:  var(--velvet);
+    
+}
+
+h1 {
+
+}
+
+#overlay-menu {
+  position: absolute;
+  top: 30px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#overlay-menu a {
+  display: block;
+  text-decoration: none;
+  padding: 8px;
+  color: black;
+}
+
+#overlay-menu a:hover {
+  background-color: #ddd;
+}
+
+.hidden {
+  display: none;
+}
+
+
+:root {
+    --beige: #ebd58f;
+    --velvet: #34004d;
+}
