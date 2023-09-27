@@ -31,8 +31,13 @@ h3 {
 .arrow {
     min-height: 50px;
     height: 8vh;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(180deg);
 }
 
+.rotate {
+    transform: rotate(0deg);
+}
 
 .simple-button {
     background: none;
@@ -47,39 +52,29 @@ h3 {
     transform: scale(1.1);
 }
 
-/*
-.simple-button:focus,
-.simple-button:hover {
-    background: none;
-    color: inherit;
-    text-decoration: none;
-}
-*/
-
-
 #overlay-menu {
-    transform: translateY(-300%);
     transition: transform 0.3s ease-in-out;
-  position: absolute;
-  top: 15vh;
-  background-color: none;
-  padding: 10px;
+    transform: translateY(0)
+    position: absolute;
+    top: 15vh;
+    background-color: none;
+    padding: 10px;
 }
 
 #overlay-menu a {
-  display: block;
-  text-weight: bold;
-  text-decoration: none;
-  padding: 8px;
-  color: var(--beige);
+    display: block;
+    text-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+    color: var(--beige);
 }
 
 #overlay-menu a:hover {
-  background-color: #756f59;
+    background-color: #756f59;
 }
 
 .hidden {
-  transform: translateY(0);
+    transform: translateY(-200%);
 }
 
 
