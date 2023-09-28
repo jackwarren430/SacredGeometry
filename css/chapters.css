@@ -28,6 +28,26 @@ h3 {
     text-align: center;
 }
 
+.bottom-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bottom-bar a {
+    transition: transform 0.15s ease-in-out;
+    display: block;
+    text-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+    color: var(--beige);
+}
+
+.bottom-bar a:hover {
+    transform: scale(1.1);
+}
+
 .arrow {
     min-height: 50px;
     height: 8vh;
